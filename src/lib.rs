@@ -1,6 +1,6 @@
 use::std::collections::HashMap;
-mod test;
-use test::*;
+pub mod test;
+pub use test::*;
 
 pub struct FibMap {
     map: HashMap<i64, i64>,
