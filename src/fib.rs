@@ -1,21 +1,14 @@
-// use::std::collections::HashMap;
-pub mod test;
-pub use test::*;
+use::std::collections::HashMap;
 
-pub mod fib;
-pub use fib::*;
-
-/*
 pub struct FibMap {
     map: HashMap<i64, i64>,
 }
 
 impl FibMap {
-
-    pub fn new() -> FibMap{
+    pub fn new() -> FibMap {
         let mut map = HashMap::new();
-        map.insert(0, 0);
-        map.insert(1, 1);
+        map.insert(0,0);
+        map.insert(1,1);
 
         FibMap {
             map: map.clone(),
@@ -26,9 +19,10 @@ impl FibMap {
         if self.map.contains_key(&n) {
             return *self.map.get(&n).unwrap();
         }
+
         let mut fib_n = self.get_fib(n - 1);
         fib_n += self.get_fib(n - 2);
         self.map.insert(n, fib_n);
         return *self.map.get(&n).unwrap();
-        }
-}*/
+    }
+}
