@@ -5,6 +5,9 @@ pub use test::*;
 pub mod fib;
 pub use fib::*;
 
+pub mod e_sieve;
+pub use e_sieve::*;
+
 /*
 pub struct FibMap {
     map: HashMap<i64, i64>,
