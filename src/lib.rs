@@ -8,6 +8,8 @@ pub use fib::*;
 pub mod e_sieve;
 pub use e_sieve::*;
 
+pub mod palindrome;
+pub use isPalindrome::*;
 /*
 pub struct FibMap {
     map: HashMap<i64, i64>,
